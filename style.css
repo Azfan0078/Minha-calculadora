@@ -1,0 +1,52 @@
+
+header {
+    font: normal 30pt Arial;
+    text-align: center;
+    margin: 20px;
+}
+.container{
+    height: 550px;
+    width: 380px;
+background: rgb(20, 131, 182);
+padding: 50px;
+margin: auto;
+font: bold;
+display: flex;
+align-items: center;
+flex-direction:column-reverse
+
+
+}
+.container div#aritmeticos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 105px;
+    margin-top: -87px;
+}
+
+.resultados{
+    background: white;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-color: black;
+    border-width: 3px;
+    border-style:groove;
+    text-align: right;
+    font: bold 30pt arial;
+    height: 60px;
+}
+.resultados div#conta{
+    font: normal 15pt arial;
+}
+.botoes{
+    margin-top: 30px;
+    
+}
+.calculadora{
+    height: 90px;
+    width: 90px;
+    margin-top: 5px;
+    font: normal 20pt arial;
+    
+}
+
