@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentativa criar calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+    <strong> Calculadora </strong>
+
+</header>
+    <div class="container">  
+        
+        <div id="botoes" class="botoes">
+           
+            <div  class="resultados">
+                
+                <div id="conta" ></div>
+                <div id="res">0</div>
+            </div>
+
+            <div>
+                
+            </div>
+
+            <div>
+                <input type="button" value=" " class="calculadora">
+                <input type="button" value="CE" onclick="resetParcial()" class="calculadora">
+                <input type="button" value="&divide;" onclick=dividir() class="calculadora">
+                <input type="button" value="&#9746;" onclick=apagarUltimoNumero() class="calculadora">
+                
+            </div>
+
+
+
+
+        <div>
+            <input type="button" value="7" id="sete"onclick=adicionarNumero(7) class="calculadora">
+            <input type="button" value="8" id="oito"onclick=adicionarNumero(8) class="calculadora">
+            <input type="button" value="9" id="nove"onclick=adicionarNumero(9) class="calculadora">
+            <input type="button" value="x" id="vezes" onclick=multiplicar() class="calculadora">
+        </div>
+        <div>
+            <input type="button" value="4" id="quatro"onclick=adicionarNumero(4) class="calculadora">
+            <input type="button" value="5" id="cinco"onclick=adicionarNumero(5) class="calculadora">
+             <input type="button" value="6" id="seis"onclick=adicionarNumero(6) class="calculadora">
+             <input type="button" value="-" id="menos"onclick=subtrair() class="calculadora">
+        </div>
+        <div>
+            <input type="button" value="1" id="um"onclick=adicionarNumero(1) class="calculadora">
+            <input type="button" value="2" id="dois"onclick=adicionarNumero(2) class="calculadora">
+            <input type="button" value="3" id="tres"onclick=adicionarNumero(3) class="calculadora">
+            <input type="button" value="+" id="mais"onclick=somar() class="calculadora">
+        </div>
+        <div>
+            <input type="button" value="C" onclick="resetTotal()" class="calculadora">
+            <input type="button" value="0" id="zero"onclick=adicionarNumero(0) class='calculadora'>
+            <input type="button" value="," id="virgula" onclick=adicionarVirgula() class="calculadora">
+            <input type="button" value="=" id="igual"onclick=finalizar() class="calculadora">
+        </div>
+    
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
